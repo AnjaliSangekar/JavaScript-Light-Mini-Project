@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #div1
+        {
+            width: 100px;
+            height: 100px;
+            /* background-color: rgb(239, 180, 70); */
+            border: 2px solid black;
+            border-radius: 100px;
+            margin-left: 20px;
+        }
+
+        #but
+        {
+            height: 35px;
+            width: 70px;
+            margin-top: 30px;
+            margin-left: 35px;
+            background-color: rgb(246, 22, 22);
+            border-color: white;
+        }
+
+        #but:hover
+        {
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <h2>Light ON/OFF</h2>
+
+    <div id="div1">
+
+
+    </div>
+
+    <button id="but" onclick="bulb()">ON/OFF</button>
+
+    <!-- JavaScript -->
+    <script>
+
+        var flag = 0;
+
+        var light = document.getElementById("div1");
+
+        function bulb()
+        {
+            if(flag == 0)
+            {
+                //var light = document.getElementById("div1");
+                light.style.backgroundColor = "yellow";
+
+                flag = 1;
+
+            }
+            else
+            {
+                light.style.backgroundColor = "white";
+
+                flag = 0;
+            }
+        
+        }
+
+    </script>
+
+</body>
+</html>
